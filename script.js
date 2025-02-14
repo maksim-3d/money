@@ -3,12 +3,23 @@ var sumElement = document.getElementById('sum')
 var zElement = document.getElementById('z')
 var yElement = document.getElementById('y')
 var qElement = document.getElementById('q')
+var uElement = document.getElementById('u')
 var yclick = document.getElementById('yclick');
 var a = 0;
 var Plus = 1;
-function av() {
-if(a==0){localStorage.heroLevel = a;}
-if(a=='NaN'){localStorage.heroLevel = a;}
+a = Number(localStorage.heroLevel);
+if (localStorage.m !== 1) {
+  localStorage.heroLevel = 0;
+  localStorage.m = 1;
+  localStorage.heroLevel = a;
+}
+Plus = Number(localStorage.maksim);
+sumElement.innerHTML = a;
+clickBtnElement.onclick = function() {
+  a += Plus;
+  sumElement.innerHTML = a;
+  localStorage.heroLevel = a;
+  localStorage.maksim = Plus;
 if (a >= 999999){ document.getElementById('y').style.display='none';
   document.getElementById('yclick').style.display='none';
   document.getElementById('sum').style.display='none';
@@ -19,15 +30,6 @@ if (a >= 999999){ document.getElementById('y').style.display='none';
   document.getElementById('u').style.display='none';
   document.getElementById('d').style.display='block';
   }
-}
-a = Number(localStorage.heroLevel);
-Plus = Number(localStorage.maksim);
-sumElement.innerHTML = a;
-clickBtnElement.onclick = function() {
-  a += Plus;
-  sumElement.innerHTML = a;
-  localStorage.heroLevel = a;
-  localStorage.maksim = Plus;
 
 }
 yElement.onclick = function() {
