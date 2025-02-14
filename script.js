@@ -11,6 +11,16 @@ if(a=='NaN'){localStorage.heroLevel = a;}
 a = Number(localStorage.heroLevel);
 Plus = Number(localStorage.maksim);
 sumElement.innerHTML = a;
+if (a >= 999999){ document.getElementById('y').style.display='none';
+  document.getElementById('yclick').style.display='none';
+  document.getElementById('sum').style.display='none';
+  document.getElementById('clickBtn').style.display='none';
+  document.getElementById('x').style.display='none';
+  document.getElementById('z').style.display='none';
+  document.getElementById('q').style.display='none';
+  document.getElementById('u').style.display='none';
+  document.getElementById('d').style.display='block';
+  }
 clickBtnElement.onclick = function() {
   a += Plus;
   sumElement.innerHTML = a;
