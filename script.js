@@ -6,11 +6,9 @@ var qElement = document.getElementById('q')
 var yclick = document.getElementById('yclick');
 var a = 0;
 var Plus = 1;
+function av() {
 if(a==0){localStorage.heroLevel = a;}
 if(a=='NaN'){localStorage.heroLevel = a;}
-a = Number(localStorage.heroLevel);
-Plus = Number(localStorage.maksim);
-sumElement.innerHTML = a;
 if (a >= 999999){ document.getElementById('y').style.display='none';
   document.getElementById('yclick').style.display='none';
   document.getElementById('sum').style.display='none';
@@ -21,6 +19,10 @@ if (a >= 999999){ document.getElementById('y').style.display='none';
   document.getElementById('u').style.display='none';
   document.getElementById('d').style.display='block';
   }
+}
+a = Number(localStorage.heroLevel);
+Plus = Number(localStorage.maksim);
+sumElement.innerHTML = a;
 clickBtnElement.onclick = function() {
   a += Plus;
   sumElement.innerHTML = a;
