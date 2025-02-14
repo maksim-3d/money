@@ -7,8 +7,11 @@ var yclick = document.getElementById('yclick');
 var a = 0;
 var Plus = 1;
 localStorage.maksim = Plus;
+alert(Plus)
 a = Number(localStorage.heroLevel);
+alert(Plus)
 Plus = Number(localStorage.maksim);
+alert(Plus)
 clickBtnElement.onclick = function() {
   a += Plus;
   alert(Plus)
