@@ -8,7 +8,6 @@ var a = 0;
 var Plus = 1;
 localStorage.maksim = Plus;
 alert(a)
-a = Number(localStorage.heroLevel);
 alert(a)
 Plus = Number(localStorage.maksim);
 alert(a)
