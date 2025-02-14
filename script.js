@@ -12,6 +12,7 @@ a = Number(localStorage.heroLevel);
 alert(Plus)
 Plus = Number(localStorage.maksim);
 alert(Plus)
+sumElement.innerHTML = a;
 clickBtnElement.onclick = function() {
   a += Plus;
   alert(Plus)
