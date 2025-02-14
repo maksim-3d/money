@@ -6,6 +6,7 @@ var qElement = document.getElementById('q')
 var yclick = document.getElementById('yclick');
 var a = 0;
 var Plus = 1;
+localStorage.heroLevel = a;
 a = Number(localStorage.heroLevel);
 Plus = Number(localStorage.maksim);
 sumElement.innerHTML = a;
