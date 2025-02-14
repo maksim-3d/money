@@ -8,7 +8,6 @@ var a = 0;
 var Plus = 1;
 localStorage.maksim = Plus;
 Plus = Number(localStorage.maksim);
-a = Number(localStorage.heroLevel);
 sumElement.innerHTML = a;
 clickBtnElement.onclick = function() {
   a += Plus;
