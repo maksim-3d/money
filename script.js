@@ -7,7 +7,10 @@ var uElement = document.getElementById('u')
 var yclick = document.getElementById('yclick');
 var a = 0;
 var Plus = 1;
-a = Number(localStorage.heroLevel);
+if (localStorage.m == 1) {
+  a = Number(localStorage.heroLevel);
+  localStorage.heroLevel = a;
+}
 if (localStorage.m !== 1) {
   localStorage.heroLevel = 0;
   localStorage.m = 1;
