@@ -5,18 +5,8 @@ var yElement = document.getElementById('y')
 var qElement = document.getElementById('q')
 var uElement = document.getElementById('u')
 var yclick = document.getElementById('yclick');
-var a = 0;
-var Plus = 1;
-if (localStorage.m == 1) {
-  a = Number(localStorage.heroLevel);
-  localStorage.heroLevel = a;
-}
-if (localStorage.m !== 1) {
-  localStorage.heroLevel = 0;
-  localStorage.m = 1;
-  localStorage.heroLevel = a;
-}
-Plus = Number(localStorage.maksim);
+var a = Number(localStorage.heroLevel) || 0;
+var Plus = Number(localStorage.maksim) || 1;
 sumElement.innerHTML = a;
 clickBtnElement.onclick = function() {
   a += Plus;
