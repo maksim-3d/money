@@ -12,17 +12,19 @@ body {
   border-radius: 20px;
 }
 .yclick {
-  position: absolute;
-  text-align: center;
   width: 100px;
+}
+#achievementsBtn{
+  text-align: left;
 }
 
 .sumClick {
-  font-size: 110px;
-  font-weight: 110px;
-  position: absolute;
-  text-align: center;
-  width: 370px;
+  margin: 10px;
+  font-size: 60px;
+}
+#docty {
+  margin-top: 150px;
+  text-align: left;
 }
 .image-button {
   width: 150px;
