@@ -13,14 +13,20 @@
       <center>
       <div class="conteiner">
         <div class="mainBlock">
-          <button class='x' id='x' style="display: none" onclick="off()">закрыть</button>
+          <div id = "div">
+            <button class="yclick" id="yclick" onclick="yClick()">улучшить клик</button>
+          </div>
           <button class="y" id="y" style="display: none;">улучшения за 100</button>
           <button class="z" id="z" style="display: none;">улучшения за 1000</button>
           <button class="q" id="q" style="display: none;">улучшения за 10000</button>
           <button class="u" id="u" style="display: none;">улучшения за 100000</button>
-          <p class="sumClick" id="sum">0</p>
-          <button class="yclick" id="yclick" onclick="yClick()">улучшить клик</button>
           <button class="image-button" id="clickBtn"></button>
+          <p class="sumClick" id="sum">0</p>
+          <br>
+          <button id="achievementsBtn">Достижения</button>
+          <div id="achievementsList" style="display: none;"></div>
+          <button class='x' id='x' style="display: none" onclick="off()">закрыть</button>
+
         </div>
       </div>
       </center>
