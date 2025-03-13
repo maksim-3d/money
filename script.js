@@ -5,14 +5,15 @@ var yElement = document.getElementById('y')
 var qElement = document.getElementById('q')
 var uElement = document.getElementById('u')
 var yclick = document.getElementById('yclick');
+var i = document.getElementById('i');
 var x= document.getElementById('x');
 var ach = document.getElementById('achievementsBtn');
 var a = Number(localStorage.heroLevel) || 0;
 var Plus = Number(localStorage.maksim) || 1;
 var achievements = {
   "firstClick": { condition: 1, reward: 1000, unlocked: false, text: "Первый клик! +1 к" },
-  "hundredClicks": { condition: 10000, reward: 10000, unlocked: false, text: "10000 кликов! +10 к" },
-  "thousandClicks": { condition: 100000, reward: 150000, unlocked: false, text: "100000 кликов! +150 к" },
+  "hundredClicks": { condition: 10000, reward: 5000, unlocked: false, text: "10000 кликов! +5 к" },
+  "thousandClicks": { condition: 100000, reward: 15000, unlocked: false, text: "100000 кликов! +15 к" },
 };
 
 // Загружаем достижения из localStorage
@@ -49,6 +50,7 @@ clickBtnElement.onclick = function() {
     list.innerHTML = ""; // Очищаем старый список
     list.style.display = "block" // Показываем список
     x.style.display= "block";
+    i.style.display= "none";
     for (let key in achievements) {
         let ach = achievements[key];
         let status = ach.unlocked ? "✅ Получено" : "❌ Не получено";
@@ -90,6 +92,7 @@ function yClick() {
   document.getElementById('yclick').style.display='none';
   document.getElementById('sum').style.display='none';
   document.getElementById('clickBtn').style.display='none';
+  document.getElementById('i').style.display='none';
   document.getElementById('x').style.display='block';
   document.getElementById('z').style.display='block';
   document.getElementById('q').style.display='block';
@@ -102,6 +105,7 @@ function yClick() {
   document.getElementById('yclick').style.display='block';
   document.getElementById('sum').style.display='block';
   document.getElementById('clickBtn').style.display='block';
+  document.getElementById('i').style.display='block';
   document.getElementById('x').style.display='none';
   document.getElementById('z').style.display='none';
   document.getElementById('q').style.display='none';
