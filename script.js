@@ -9,7 +9,7 @@ var yclick = document.getElementById('yclick');
 var i = document.getElementById('i');
 var x= document.getElementById('x');
 var ach = document.getElementById('achievementsBtn');
-var a =0;
+var a =Number(localStorage.heroLevel) || 0;
 var Plus = Number(localStorage.maksim) || 1;
 var achievements = {
   "firstClick": { condition: 1, reward: 1000, unlocked: false, text: "Первый клик! +1 к" },
