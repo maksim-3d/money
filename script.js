@@ -9,7 +9,7 @@ var yclick = document.getElementById('yclick');
 var i = document.getElementById('i');
 var x= document.getElementById('x');
 var ach = document.getElementById('achievementsBtn');
-var a = Number(localStorage.heroLevel) || 0;
+var a =0;
 var Plus = Number(localStorage.maksim) || 1;
 var achievements = {
   "firstClick": { condition: 1, reward: 1000, unlocked: false, text: "Первый клик! +1 к" },
@@ -103,6 +103,7 @@ function yClick() {
   document.getElementById('z').style.display='block';
   document.getElementById('q').style.display='block';
   document.getElementById('u').style.display='block';
+  document.getElementById('r').style.display='block';
   ach.style.display = "none";
   x.style.display = "block";
   }
@@ -116,6 +117,7 @@ function yClick() {
   document.getElementById('z').style.display='none';
   document.getElementById('q').style.display='none';
   document.getElementById('u').style.display='none';
+  document.getElementById('r').style.display='none';
   let list = document.getElementById("achievementsList");
   list.innerHTML = ""; // Очищаем старый список
   list.style.display = "none";
