@@ -1,6 +1,7 @@
 var clickBtnElement = document.getElementById('clickBtn')
 var sumElement = document.getElementById('sum')
 var zElement = document.getElementById('z')
+var rElement = document.getElementById('r')
 var yElement = document.getElementById('y')
 var qElement = document.getElementById('q')
 var uElement = document.getElementById('u')
@@ -60,7 +61,12 @@ clickBtnElement.onclick = function() {
     }
   };
 yElement.onclick = function() {
-  if (a >= 100){
+  if (a >= 100000000000){
+    Plus += 1000000000;
+    a -= 100000000000;
+    sumElement.innerHTML = a;
+}
+    if (a >= 100){
     Plus += 1;
     a -= 100;
     sumElement.innerHTML = a;
