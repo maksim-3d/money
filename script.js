@@ -5,6 +5,10 @@ var rElement = document.getElementById('r')
 var yElement = document.getElementById('y')
 var qElement = document.getElementById('q')
 var uElement = document.getElementById('u')
+var pElement = document.getElementById('p')
+var oElement = document.getElementById('o')
+var mElement = document.getElementById('m')
+var nElement = document.getElementById('n')
 var yclick = document.getElementById('yclick');
 var i = document.getElementById('i');
 var x= document.getElementById('x');
@@ -76,6 +80,34 @@ zElement.onclick = function(){
 if (a >= 1000){
   Plus += 10;
   a -= 1000;
+  sumElement.innerHTML = a;
+}
+}
+pElement.onclick = function(){
+if (a >= 1000000){
+  Plus += 10000;
+  a -= 1000000;
+  sumElement.innerHTML = a;
+}
+}
+oElement.onclick = function(){
+if (a >= 10000000){
+  Plus += 100000;
+  a -= 10000000;
+  sumElement.innerHTML = a;
+}
+}
+mElement.onclick = function(){
+if (a >= 100000000){
+  Plus += 1000000;
+  a -= 100000000;
+  sumElement.innerHTML = a;
+}
+}
+nElement.onclick = function(){
+if (a >= 1000000000){
+  Plus += 10000000;
+  a -= 1000000000;
   sumElement.innerHTML = a;
 }
 }
