@@ -111,6 +111,13 @@ if (a >= 1000000000){
   sumElement.innerHTML = a;
 }
 }
+bElement.onclick = function(){
+if (a >= 10000000000){
+  Plus += 100000000;
+  a -= 10000000000;
+  sumElement.innerHTML = a;
+}
+}
 qElement.onclick = function() {
   if (a >= 10000){
     Plus += 100;
