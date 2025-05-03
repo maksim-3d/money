@@ -64,7 +64,7 @@ clickBtnElement.onclick = function() {
         list.appendChild(item);
     }
   };
-yElement.onclick = function() {
+rElement.onclick = function() {
   if (a >= 100000000000){
     Plus += 1000000000;
     a -= 100000000000;
@@ -143,6 +143,11 @@ function yClick() {
   document.getElementById('q').style.display='block';
   document.getElementById('u').style.display='block';
   document.getElementById('r').style.display='block';
+  document.getElementById('p').style.display='block';
+  document.getElementById('o').style.display='block';
+  document.getElementById('m').style.display='block';
+  document.getElementById('n').style.display='block';
+  document.getElementById('b').style.display='block';
   ach.style.display = "none";
   x.style.display = "block";
   }
@@ -157,6 +162,11 @@ function yClick() {
   document.getElementById('q').style.display='none';
   document.getElementById('u').style.display='none';
   document.getElementById('r').style.display='none';
+  document.getElementById('p').style.display='none';
+  document.getElementById('o').style.display='none';
+  document.getElementById('m').style.display='none';
+  document.getElementById('n').style.display='none';
+  document.getElementById('b').style.display='none';
   let list = document.getElementById("achievementsList");
   list.innerHTML = ""; // Очищаем старый список
   list.style.display = "none";
